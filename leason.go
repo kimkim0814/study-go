@@ -2,36 +2,27 @@ package main
 
 import "fmt"
 
-//定数
-
-const (
-	URL      = "http://xxx.co.jp"
-	SiteName = "test"
-)
-
-const (
-	A = 1
-	B
-	C
-	D = "A"
-	E
-	F
-)
-
-const (
-	c0 = iota
-	c1
-	c2
-)
 func main() {
-	// fmt.Println(Pi)
+	fmt.Println(1 + 2)
 
-	// Pi = 3
-	// fmt.Println(Pi)
+	fmt.Println("ABC" + "DE")
 
-	fmt.Println(URL, SiteName)
+	fmt.Println(5 - 1)
 
-	fmt.Println(A, B, C, D, E, F)
+	fmt.Println(5 * 4)
 
-	fmt.Println(c0,c1,c2)
+	fmt.Println(60 / 3)
+
+	fmt.Println(9 % 4)
+
+	n:=0
+	n += 4 
+	fmt.Println(n)
+	n++
+	fmt.Println(n)
+	n--
+	fmt.Println(n)
+	s := "ABC"
+	s += "DEF"
+	fmt.Println(s)
 }
