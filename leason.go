@@ -2,24 +2,18 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
-//go goroutin
+//init
 
-func sub(){
-	for {
-		fmt.Println("Sub Loop")
-		time.Sleep(100 * time.Millisecond)
-	}
+func init(){
+	fmt.Println("init")
 }
 
-func main() {
-	go sub()
-	go sub()
+func init(){
+	fmt.Println("init2")
+}
 
-	for{
-		fmt.Println("Main Loop")
-		time.Sleep(200 * time.Millisecond)
-	}
+func main(){
+	fmt.Println("Main")
 }
