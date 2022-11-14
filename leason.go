@@ -4,16 +4,36 @@ import (
 	"fmt"
 )
 
-//init
+//スライス
+//宣言、操作
 
-func init(){
-	fmt.Println("init")
-}
+func main() {
+	var sl []int
+	fmt.Println(sl)
 
-func init(){
-	fmt.Println("init2")
-}
+	var sl2 []int = []int{100, 200}
+	fmt.Println(sl2)
 
-func main(){
-	fmt.Println("Main")
+	sl3 := []string{"A","B"}
+	fmt.Println(sl3)
+
+	sl4 := make ([]int,5)
+	fmt.Println(sl4)
+
+	sl2[0] = 1000
+	fmt.Println(sl2)
+
+	sl5 := []int{1,2,3,4,5}
+	fmt.Println(sl5)
+
+	fmt.Println(sl5[0])
+
+	fmt.Println(sl5[:2])
+
+	fmt.Println(sl5[2:])
+
+	fmt.Println(sl5[:])
+
+	fmt.Println(sl5[len(sl5) - 1])
+	fmt.Println(sl5[1:len(sl5) - 1])
 }
